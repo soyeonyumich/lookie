@@ -1,0 +1,370 @@
+/*Mobile first*/
+/* import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@450&family=Noto+Sans+JP:wght@300;400&display=swap'); 
+
+:root {
+    /* Set up the basic color and font styles */
+    /* Colors: */
+    --accent-green:#422D00;;
+    --accent-light-green: #422D00;
+    --bg: white;
+    --body-text-color:#96753b;
+    --link-hover:#B2B1AE;
+    
+    /* Font/text values */
+
+    /*    font-family, find the values from google fonts website*/
+    --headings-font-family:'EB Garamond', serif;
+    --body-font-family:'Noto Sans JP', sans-serif;
+} 
+
+
+
+html {
+    font-size: 16px;
+}
+
+
+
+body {
+    background-color:var(--bg);
+    font-family: var(--body-font-family);
+    font-weight: 300;
+    /*  Convert px to rem:  1rem = 16px*/
+    font-size: 1rem;
+    /*    line-height is 150% of the font size*/
+    line-height: 1.6;
+    color: var(--body-text-color);
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 1.3rem;
+}
+
+/*this is a group selection, selecting all the headlines h1-h4 and set a standard style*/
+h1,
+h2,
+h3,
+h4 {
+    color: var(--accent-green);
+    /*    font-family*/
+    font-family: var(--headings-font-family);
+    /*    font-weight*/
+    font-weight: 450;
+    line-height: 1.2;
+}
+
+/*Set a unique style to a specific tag element*/
+h1 {
+    /* margin-top: 0; */
+    font-size: 2.625rem;
+    font-family:'Didot bold', serif;
+}
+
+h2 {
+    /* margin-top: 0; */
+    font-size: 30px;
+    font-family: Helvetica bold, serif;
+}
+h3 {
+  
+    font-size: 1.777rem;
+}
+
+h4 {
+    margin-top: 2rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    font-size: 1.333rem;
+}
+p{  font-size: 15px;
+    font-family: Arial, Helvetica , sans-serif;
+}
+.one{
+    background-color: #422D00;
+    
+}
+.one h2{
+    color: #FCF4E7;
+}
+.one p{
+    color: #D0B785;
+}
+/*Interactive elements*/
+
+/* link*/
+
+a {
+    color: #422D00;
+}
+
+a:hover {
+    color:#422D00;
+    /*    text-decoration: none;*/
+}
+
+/*button style*/
+/*solid button style*/
+.btn-primary {
+    font-size: 15px;
+    letter-spacing: 0.3px;
+    line-height: 1.5;
+    /*    border-radius*
+    /*    top:1 right:3 bottom:1 left:3*/
+    /*    the size of button*/
+    padding: 10px 20px;
+   
+    background-color: #422D00;
+    color: #FFF1D6;
+    border: none;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    transition: all 0.5s;
+    font-family: Helvetica, sans-serif;
+}
+
+.btn-primary:hover {
+    color: #D0B785;
+    background-color:#422D00;
+    opacity: 0.8;
+}
+
+/*outline button style*/
+.btn-outline-primary {
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    line-height: 1.375rem;
+    /*    border-radius*/
+    padding: 1rem 3rem;
+    color:var(--accent-light-green);
+    background-color: transparent;
+    border: 1px #422D00 solid;
+    transition: all 0.5s;
+}
+
+.btn-outline-primary:hover {
+    color: var(--bg);
+    background-color: var(--accent-light-green);
+    border-color: var(--accent-light-green);
+}
+
+footer{
+    background-color: #D0B785;
+    color: #231955;
+}
+
+/* custom class */
+/*home page*/
+
+.view{
+    background-image: url(../img/cookie_background.svg);
+    background-position: center center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 250px;
+    padding-bottom: 250px;
+}
+.seven{
+    font-family: 'Helvetica bold', sans-serif;
+    
+}
+
+/*about page*/
+.two h2{ 
+    
+    color: #231955;
+}
+.three{
+    background-color:#FCF4E7 ;
+    
+}
+.four{
+    background-color: #E6D4B0;
+}
+.five{
+    background-color: #E6D4B0;
+    color: #231955;
+}
+.six{
+    color: #422D00;
+}
+.lookie{
+    margin-bottom: 0;
+    font-family: Helvetica bold, serif;
+    color: #422D00;
+}
+.get{
+    font-family: Helvetica bold, serif;
+    color: #422D00;
+}
+.yes{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #422D00;
+    font-size: 8px ;
+    display: inline;
+}
+#email{
+    
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: smaller;
+    width: 90%;
+    color : #422D00; 
+}
+
+/*screen that is larger than the mobile view, Large Screen*/
+@media only screen and (min-width:480px) {
+  
+
+}
+/* gallery */
+
+.header{
+    color: #422D00;
+}
+.shopping{
+    color: #422D00;
+    width: 50px;
+    list-style: none;
+    margin-left: 10px;
+}
+.user{
+    color: #422D00;
+    list-style: none;
+   
+    
+}
+.navbar-brand{
+    font-family: Helvetica bold, serif;
+}
+.nav-item{
+    font-family:Helvetica bold, serif;
+   
+}
+
+.nav-item{
+    font-family: Arial, Helvetica , sans-serif;
+    color: #422D00;
+    font-size: small;
+}
+.choco{
+ 
+    
+}
+.chocolate{
+    font-size: 35px;
+    color: #422D00;
+    font-family: Helvetica bold, serif;
+}
+.chocof{
+    color: #674C14;
+}
+
+.btn-primary2{
+    font-size: 20px;
+    letter-spacing: 0.3px;
+    line-height: 1.5;
+    /*    border-radius*
+    /*    top:1 right:3 bottom:1 left:3*/
+    /*    the size of button*/
+    padding: 24px 45px;
+    background-color: #422D00;
+    color: #FFF1D6;
+    border: none;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    transition: all 0.5s;
+    font-family: Helvetica, sans-serif;
+}
+
+.btn-primary2:hover {
+    color: #D0B785;
+    background-color:#422D00;
+    opacity: 0.8;
+}
+
+/*outline button style*/
+.btn-outline-primary2 {
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    line-height: 1.375rem;
+    /*    border-radius*/
+    
+    padding: 1rem 3rem;
+    color:var(--accent-light-green);
+    background-color: transparent;
+    border: 1px #422D00 solid;
+    transition: all 0.5s;
+}
+
+.btn-outline-primary2:hover {
+    color: var(--bg);
+    background-color: var(--accent-light-green);
+    border-color: var(--accent-light-green);
+}
+/*couunter*/
+.quantity{display: flex;
+    justify-content: center;
+    background-color: #422D00;
+    border-radius: 10px;
+    padding: 5px;
+    }
+    .quantity input{
+        width: 60px;
+        background-color: #422D00;
+        color:white;
+        padding-left:30%;
+        font-size: 1.2rem;
+    border: none;
+    }
+    
+    .quantity .buttons button{
+        display:block;
+        border-radius: 10px;
+        
+    }
+    .d-flex{
+        width: 200px;
+        height: 30px;
+        border-color: #422D00;
+       }
+    .d-flex input{
+           border-radius: 20px;
+           border-color: #422D00;
+           padding-left: 30px;
+       }
+    .fa-search{
+        position: relative;
+        left: 25px;
+        top: 80X;
+        font-size: 18px;
+        padding: 6px 1px 11px 1px;
+        color: #422D00;
+    }
+  .information{
+    padding-left: 50px;
+  }
+  .information h2{
+    color: #422D00;
+  }
+  .information input{
+    border-radius: 10px;
+    border-color:#422D00;
+  }
+  .address{
+    padding-left: 100px;
+  }
+  .cart{
+    color: #422D00;
+    font-size: 30px;
+    font-family: Helvetica bold, serif;
+  }
+  .shop{
+    padding-left: 40px;
+  }
+  .ad{
+    padding-left: 45px;
+  }
+  .user{
+    padding-left: 8px ;
+  }
